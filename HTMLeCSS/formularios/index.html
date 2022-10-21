@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Cadastro</title>
+</head>
+<body>
+  <h1>Trabalhando com formulários</h1>
+  <h2><mark>Tipos de Input</mark></h2>
+  <form>    
+    <label >Text:</label><input type="text" /><br>
+    <label >Number:</label><input type="number" min="0" step="5" max="99" /><br>
+    <label >Range:</label><input type="range" min="0" max="100" value="90" /><br>
+    <label >Color:</label><input type="color" /><br>
+    <label >Email:</label><input type="email" /><br>
+    <label >Url:</label><input type="url" /><br>
+    <label >Date:</label><input type="date" /><br>
+    <label >Week:</label><input type="week" /><br>
+    <label >Month:</label><input type="month" /><input type="month" /><br>
+    <label >checkbox:</label><input type="checkbox" /><input type="checkbox" /><br>
+    <label >Radio:</label><input type="radio" name="aceita" /><input type="radio" name="aceita" /><br>
+    <label >Hidden:</label><input type="hidden" /><br>
+    <label >File:</label><input type="file" /><br>
+    <label >Search:</label><input type="search" /> =>Só funciona no chome 
+    <br>  
+
+    <label>Button: </label><input type="submit" value="Enviar" /><br>
+  </form>
+  <hr />
+  <h2><mark>Tags Form</mark></h2>
+  <form name="signup" onSubmit="alert('Enviei o formulário');" method="post" action="#">
+    Nome: <input type="text" name="name" /><br>
+    Idade: <input type="number" name="age" /><br>
+    Senha: <input type="password" name="password" /><br>
+    <button type="submit">Enviar</button>
+  </form>
+  <hr />
+  <h2><mark>Checkbox e Radio button</mark></h2>  
+  <form method="post">
+    <h3>Você selecionou: Pizza de Calabresa</h3>
+    <p>Quais Opcionais você deseja?</p>
+    <input type="checkbox" disabled name="opcional[]" value="queijo"> + queijo <br>
+    <input type="checkbox" name="opcional[]" value="calabresa"> + calabresa <br>
+    <input type="checkbox" name="opcional[]" value="cebola"> + cebola <br>
+    <input type="checkbox" name="opcional[]" value="azeitona"> + azeitona <br>
+
+    <!-- Quando o servidor receber as opções recebe uma lista
+      $opcional["queijo", "cebola", azeitona]
+    -->
+
+    <p>Borda recheada?</p>
+    <input type="radio" name="borda" value="sim">Sim<br>
+    <input type="radio" name="borda" value="nao">Não<br>
+    <p>Bebida</p>
+    <input type="radio" name="bebida" value="suco">Suco<br>
+    <input type="radio" name="bebida" value="refrigerante">Refrigerante<br>
+    <input type="radio" name="bebida" value="agua">Água<br>
+    <input type="radio" name="bebida" value="nenhum">Nenhum<br><br>
+
+    <button type="submit">Enviar pedido</button>
+  </form>
+  <hr />
+  <h2><mark>Button e seus tipos</mark></h2>
+  <form onSubmit="" method="get">
+    <label>Nome*: </label><input type="text" name="name" /><br>
+    <label>Idade*: </label><input type="number" name="age" /><br>
+    <label>Password*: </label><input type="password" name="password" /><br>
+
+    <button type="button" onclick="alert('Cliquei aqui!')" >Clicável</button>
+    <button type="button" onmouseover="alert('Passei aqui!')" >Clicável</button>
+    <button type="reset">Limpar</button>
+    <button type="submit">Enviar</button>
+  </form>  
+
+</body>
+</html>
