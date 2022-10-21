@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+    <hr />
+
+    <h2 id="indice">Índice</h2>    
+    <ul>
+        <li><a href="#historia">História dos computadores</a></li>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#html">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#lista">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#referencia">Links de referências</a></li>
+    </ul>
+
+    <h2 id="historia">História dos computadores</h2>
+    <h3>Primerios computadores</h3>
+    <h4>1a geração</h4>
+    <ol>
+      <li>Harvard Mark (1944)</li>
+      <li>Colossus (1946)</li>
+      <li>ENIAC (1946)</li>
+    </ol>
+
+    <h4>2a geração (1959 a 1965)</h4>
+    <p>Transitores</p>  
+
+    <h4>3a geração (1965 a 1970)</h4>
+    <h5>Circuito integradores</h5>
+    <ul>
+      <li>Transitor</li>
+      <li>Capacitores</li>
+      <li>Resistores</li>
+    </ul>
+
+    <h4>4a geração (a partir de 1971)</h4>
+
+    <h4>5a geração </h4>    
+
+    <a href="#indice">>voltar</a>
+
+    <h2 id="clients">O que são <i>Clients</i>?</h2>
+    <p><strong><i>Clients </strong></i>ou traduzindo para o português <strong><i>Clientes </strong></i>são os browseres. Quando entramos em um site, o navegador faz uma requisição, enviando o protocolo HTTP para o servidor e o servidor devolve em resposta arquivos HTML, CSS, JavaScript, Imagens, etc.</p>
+
+    <blockquote><i>"O lado client é quando você consome a informação de algum lugar baseado na web, o client é o dispositivo que está consumindo aquela informação na internet".
+    </blockquote></i>
+
+    <a href="#indice">>voltar</a>
+
+    <h2 id="servers">O que são <i>Servers</i>?</h2>
+    <p><strong><i>Servers </strong></i>ou traduzindo para português Servidores. Servidores são locais onde hospedamos os sites. Quando você coloca o seu site na intenet, você vai hospedar ele no servidor para quando alguém digitar no seu site por exemplo <mark>www.site.com.br</mark> e der um enter, ele vai através da intenet encontrar um computador, onde vai estar o seu arquivo do site e vai enviar essa informação de volta. Esses arquivos de retorno que são arquivos HTML, CSS, JavaScript, Imagens, Áudios e outros são chamados de arquivos estáticos, que o servidor envia para o cliente.</p>
+
+    <blockquote><i>"O lado servidor serve informação para os clientes."</blockquote></i> 
+
+    <p></p>
+
+    <a href="#indice">>voltar</a>
+
+    <h2 id="html">Como é uma estrutura básica de um HTML?</h2>
+    <p>A estrutura básica de um documento HTML, ou seja, de uma página da web, é realizada da seguinte forma:
+    <pre>
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+      &lt;head&gt;
+          &lt;meta charset="utf-8"&gt;
+          &lt;title&gt;&gt;&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;&lt;
+      &lt;/body&gt;
+      &lt;/html&gt;
+    </pre>
+    <p>A partir desse código, podemos desenvolver toda a nossa página, estruturando como precisarmos. Mas primeiro, é bom compreender o que está sendo feito até o momento:</p>
+    <ul>
+      <li>&lt;!DOCTYPE html&gt; — A declaração do doctype informa ao navegador que está sendo utilizado a linguagem HTML . Hoje em dia, o doctype basicamente é necessário apenas para garantir que o documento se comporte corretamente.</li>
+      <br>
+      <li>&lt;head&gt;&lt;/head&gt; — O elemento &lt;head&gt; é o local no qual você irá incluir todos os elementos que deseja incluir na página mas que não deve ser renderizado. Dentre eles, podemos utilizar os metadados, o título, as tags &lt;link&gt; para adicionar folhas de estilos, entre outras.</li>
+      <br>
+      <li>&lt;meta charset=”utf-8″&gt; — Esse elemento de metadados serve para definir o conjunto de caracteres que seu documento deve usar para o utf-8.</li>
+      <br>
+      <li>&lt;title&gt;&lt;/title&gt; — O elemento &lt;title&gt; serve para definir o título de sua página. Portanto, é aqui que se define o título que é mostrado na guia do navegador.</li>
+      <br>
+      <li>&lt;body&gt;&lt;/body&gt; — Finalmente, neste elemento, ficarão todos os elementos que serão renderizados pelo navegador, ou seja, todo o corpo da sua página HTML.</li>
+    </ul>    
+
+    <a href="#indice">>voltar</a>
+
+    <h2 id="lista">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
+       Não esqueça de colocar links para outros sites e também de formatar o texto com 
+       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
+    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+
+    <h2 id="referencia">Links de referências</h2>   
+    <ul>
+        <li><a href="#" target="_blank">http://dio.me</a></li>
+        <li><a href="#" target="_blank">http://w3c.org</a></li>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals" target="_blank">https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals</a></li>
+        <li><a href="https://qastack.com.br/programming/6817262/how-to-display-html-tags-as-plain-text" target="_blank">https://qastack.com.br/programming/6817262/how-to-display-html-tags-as-plain-text</a></li>
+    </ul>
+    <a href="#indice">>voltar</a>
+
+</body>
+</html>
