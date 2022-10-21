@@ -72,7 +72,23 @@
     <button type="button" onmouseover="alert('Passei aqui!')" >Clicável</button>
     <button type="reset">Limpar</button>
     <button type="submit">Enviar</button>
-  </form>  
-
+  </form> 
+  <hr />
+  <h2><mark>Select e seus tipos</mark></h2> 
+  <form onSubmit="" method="get">
+    <label>Nome:</label><input type="text" name="name"/><br><br>
+    <label>Cargo:</label>
+    <select name="role" multiple>
+      <option value="">Selecione o cargo</option>
+      <option value="gerente">Gerente</option>
+      <option value="diretor">Diretor</option>
+      <option selected value="presidente">Presidente</option>
+    </select><br><br>
+    <label>Assunto:</label><input type="text" name="subject"/><br><br>
+    <label>Mensagem:</label>
+    <textarea name="message" cols="30" rows="10"></textarea><br><br>
+    <button type="submit">Enviar</button>
+  </form>
+  <hr />
 </body>
 </html>
