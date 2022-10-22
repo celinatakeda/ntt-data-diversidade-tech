@@ -13,22 +13,23 @@
     <link rel="stylesheet" href="styles.css">
 
 </head>
-<body>
+<body>  
     <h1>Módulo 1 - Primeiros Passos com HTML</h1>
     <hr />
-
+    
     <h2 id="indice">Índice</h2>    
-    <ul>
-        <li><a href="#historia">História dos computadores</a></li>
-        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
-        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
-        <li><a href="#html">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#lista">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#referencia">Links de referências</a></li>
+    <ul style="width: 30% ;">
+        <li ><a href="#historia">História dos computadores</a></li>
+        <li ><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li class="lista-ordenada"><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li class="lista-ordenada"><a href="#html">Como é uma estrutura básica de um HTML?</a></li>
+        <li class="lista-ordenada"><a href="#lista">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li class="lista-ordenada"><a href="#referencia">Links de referências</a></li>
     </ul>
-
+  
+    <hr />
     <h2 id="historia">História dos computadores</h2>
-    <h3>Primerios computadores</h3>
+    <h3><u>Primerios computadores</u></h3>
     <h4>1a geração</h4>
     <ol>
       <li>Harvard Mark (1944)</li>
@@ -52,24 +53,23 @@
     <h4>5a geração </h4>    
 
     <a href="#indice">>voltar</a>
-
+    <hr />
     <h2 id="clients">O que são <i>Clients</i>?</h2>
-    <p><strong><i>Clients </strong></i>ou traduzindo para o português <strong><i>Clientes </strong></i>são os browseres. Quando entramos em um site, o navegador faz uma requisição, enviando o protocolo HTTP para o servidor e o servidor devolve em resposta arquivos HTML, CSS, JavaScript, Imagens, etc.</p>
+    <p><strong><i><font size="">Clients</font> </strong></i>ou traduzindo para o português <strong><i>Clientes </strong></i>são os browseres. Quando entramos em um site, o navegador faz uma requisição, enviando o protocolo HTTP para o servidor e o servidor devolve em resposta arquivos HTML, CSS, JavaScript, Imagens, etc.</p>
 
     <blockquote><i>"O lado client é quando você consome a informação de algum lugar baseado na web, o client é o dispositivo que está consumindo aquela informação na internet".
+      <sub><small>Diogo Mainardes</small></sub>
     </blockquote></i>
 
     <a href="#indice">>voltar</a>
-
+    <hr />
     <h2 id="servers">O que são <i>Servers</i>?</h2>
-    <p><strong><i>Servers </strong></i>ou traduzindo para português Servidores. Servidores são locais onde hospedamos os sites. Quando você coloca o seu site na intenet, você vai hospedar ele no servidor para quando alguém digitar no seu site por exemplo <mark>www.site.com.br</mark> e der um enter, ele vai através da intenet encontrar um computador, onde vai estar o seu arquivo do site e vai enviar essa informação de volta. Esses arquivos de retorno que são arquivos HTML, CSS, JavaScript, Imagens, Áudios e outros são chamados de arquivos estáticos, que o servidor envia para o cliente.</p>
+    <p><strong><i><font size="4">Servers</font> </strong></i>ou traduzindo para português Servidores. Servidores são locais onde hospedamos os sites. Quando você coloca o seu site na intenet, você vai hospedar ele no servidor para quando alguém digitar no seu site por exemplo <mark>www.site.com.br</mark> e der um enter, ele vai através da intenet encontrar um computador, onde vai estar o seu arquivo do site e vai enviar essa informação de volta. Esses arquivos de retorno que são arquivos HTML, CSS, JavaScript, Imagens, Áudios e outros são chamados de arquivos estáticos, que o servidor envia para o cliente.</p>
 
-    <blockquote><i>"O lado servidor serve informação para os clientes."</blockquote></i> 
-
-    <p></p>
+    <blockquote><i>"O lado servidor serve informação para os clientes."<sub><small>Diogo Mainardes </small></sub></blockquote></i>    
 
     <a href="#indice">>voltar</a>
-
+    <hr />
     <h2 id="html">Como é uma estrutura básica de um HTML?</h2>
     <p>A estrutura básica de um documento HTML, ou seja, de uma página da web, é realizada da seguinte forma:
     <pre>
@@ -97,24 +97,41 @@
     </ul>    
 
     <a href="#indice">>voltar</a>
-
+    <hr />
     <h2 id="lista">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
     <p>A principal diferença entre a lista ordenada e a lista não-ordenada está na maneira com que os itens de cada lista são apresentados. </p>
     <p>A lista ordenada enumera os elementos e a lista não-ordenada coloca marcadores antes de cada elemento.</p>
-    <p><strong>Lista ordenada</strong>
-    <ol>
-      <li>Item um.</li>
-      <li>Item dois.</li>
-      <li>Item três.</li>
-    </ol>
-    <p><strong>Lista não-ordenada</strong></p> 
-    <ul>
-      <li>Primeiro item.</li>
-      <li>Segundo item.</li>
-      <li>Terceiro item.</li>
-    </ul>
-   
-
+    <p>Compare as duas listas a seguir:</p>
+    <table border="1" cellspacing="1" cellpadding="5">
+      <tbody>
+        <tr>
+          <td width="50%" bgcolor="#F1F1F1">
+            <strong>Lista ordenada</strong>
+          </td>
+          <td width="50%" bgcolor="#F1F1F1">
+            <strong>Lista não-ordenada</strong>
+          </td>              
+        </tr>
+        <tr>
+          <td width="50%" valign="top">
+            <ol>
+              <li>Item um.</li>
+              <li>Item dois.</li>
+              <li>Item três.</li>
+            </ol>
+          </td>
+          <td width="50%" valign="top">
+            <ul>
+              <li>Primeiro item.</li>
+              <li>Segundo item.</li>
+              <li>Terceiro item.</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>        
+    </table>      
+        
+    <hr />
     <h2 id="referencia">Links de referências</h2>   
     <ul>
         <li><a href="#" target="_blank">http://dio.me</a></li>
