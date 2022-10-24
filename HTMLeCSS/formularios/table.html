@@ -1,45 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trabalhando com Tabelas</title>
   <style>
-    table tr:nth-child(even) {
-      background-color: burlywood;
+    table {
+      -webkit-box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+      box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+      border: solid 1px gray;
     }
-    table tr:hover td {
-      background-color: darkgrey;
+    table thead th {
+      background-color: black;
+      color: white;
     }
+    table tfoot td {
+      background-color: lightgray;
+    }
+    table tbody tr:nth-child(even) td {
+      background-color: #f1f1f1;
+    }
+    table tbody tr:hover td {
+      background-color: #E9E9E9;
+      cursor: pointer;
+    }
+
   </style>
 </head>
 <body>
-  <table summary="Esta tabela se refere as idades da turma A da Dio." border="1" width="250" cellspacing="2" cellpadding="2" align="center">
-    <tr>
-      <td>Nome</td>
-      <td>Idade</td>
-    </tr>
-    <tr id="1">
-      <td>Maria</td>
-      <td>28</td>
-    </tr>
-    <tr id="2">
-      <td>Pedro</td>
-      <td>47</td>
-    </tr>
-    <tr id="3">
-      <td>Ana </td>
-      <td>15</td>
-    </tr>
-    <tr id="4">
-      <td>Carlos</td>
-      <td>26</td>
-    </tr>
-    <tr id="5">
-      <td>Michele</td>
-      <td>32</td>
-    </tr>
+  <table summary="Esta tabela se refere as idades da turma A da Dio." width="250" cellspacing="0" cellpadding="5" align="center">
+    <caption>Tabela de idades dos alunos Dio.me</caption>   
+    <tbody>
+      <tr id="1">
+        <td>Maria</td>
+        <td>28</td>
+      </tr>
+      <tr id="2">
+        <td>Pedro</td>
+        <td>47</td>
+      </tr>
+      <tr id="3">
+        <td>Ana </td>
+        <td>15</td>
+      </tr>
+      <tr id="4">
+        <td>Carlos</td>
+        <td>26</td>
+      </tr>
+      <tr id="5">
+        <td>Michele</td>
+        <td>32</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Total</td>
+        <td>5</td>
+      </tr>
+    </tfoot>
+    <thead>
+      <tr>
+        <th colspan="2">Minha tabela</th>      
+      </tr>
+      <tr>
+        <th title="Nome completo">Nome</th>
+        <th>Idade</th>
+      </tr>
+    </thead>
   </table>  
 </body>
 </html>
