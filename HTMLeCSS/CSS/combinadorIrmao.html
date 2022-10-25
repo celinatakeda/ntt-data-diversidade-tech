@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trilha de CSS</title>
+  <style>
+    div + p {
+      color: tomato;
+    }
+
+    /* combinador de irmão em geral*/
+    div ~ p {
+      color: tomato;
+    }
+    
+    .fundo-verde + p {
+      background: lightgreen;
+    }
+
+    .fundo-verde ~ p {
+      background: lightgreen;
+    }
+    
+    /* combinadores: +, ~*/
+    .fundo-verde2 p + p {
+      background: lightgreen;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="fundo-verde">
+    <p>Parágrafo 1 dentro da div</p>
+    <p>Parágrafo 2 dentro da div</p>
+    <span>
+      <p>Parágrafo 3 dentro da div, dentro do span</p>
+    </span>
+  </div>
+
+  <p>Parágrafo 4, fora da div</p>
+  <p>Parágrafo 5, fora da div</p>
+  
+  <div class="fundo-verde">
+    <p>Parágrafo 6 dentro da div</p>
+    <p>Parágrafo 7 dentro da div</p>
+    <span>
+      <p>Parágrafo 8 dentro da div, dentro do span</p>
+    </span>
+  </div>
+
+  <p>Parágrafo 9, fora da div</p>
+  <p>Parágrafo 10, fora da div</p>
+
+  <div class="fundo-azul">
+    <p>Parágrafo 11, dentro da div</p>
+    <p>Parágrafo 12, dentro da div</p>  
+    <span>
+      <p>Parágrafo 13 dentro da div, dentro do span</p>
+    </span>
+  </div>
+
+  <p>Parágrafo 14, fora da div</p>
+  <p>Parágrafo 15, fora da div</p>
+  
+  <hr />
+  <div class="fundo-verde2">
+    <p>Elemento 01</p>
+    <p>Elemento 02</p>
+    <span>
+      <p>Elemento 03</p>
+    <p>Elemento 04</p>
+    </span>
+    <p>Elemento 05</p>
+    <p>Elemento 06</p>
+  </div>
+</body>
+</html>

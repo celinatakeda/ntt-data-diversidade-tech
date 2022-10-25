@@ -14,22 +14,62 @@
     * 4. Seletor Universal
     * 5. Seletor de atributo
     */
+
+    /* [atributo] */
+    [title] {
+      color: blue;
+    }
+
+    [title="Netflix"] {
+      color: red;
+    }
+
+    [title="Sportify"] {
+      color: green;
+    }
+
+    [title="Prime"] {
+      color: darkblue;
+    }
+
+    [title~="Streaming"] {
+      background: red;
+    }
+
+    /* aplica o css em caso de palavras com - Streaming-Netflix*/
+    [title|="Streaming"] {
+      background: yellow;
+    }
+
+    [href^="https://"] {
+      background: lightgreen;
+    }
+
+    /* trabalhar com sufixos nos atributos - termina com a palavra login*/
+    [href$="login"] {
+      background: lightgreen;
+    }
+
+    /* procura em qualquer lugar a palavra login*/
+    [href*="login"] {
+      background: lightgreen;
+    }
   </style>
 </head>
 <body>
   <div>
     <ul>
       <li>
-        <a title="Netflix" href="https://www.netflix.com">Netflix</a>
+        <a title="Streaming-Netflix" href="http://www.netflix.comlogin">Netflix</a>
       </li>
       <li>
-        <a title="Prime" href="https://www.primevideo.com">Prime Video</a>
+        <a title="Prime Streaming" href="http://www.primevideo.com/login">Prime Video</a>
       </li>
       <li>
         <a title="Sportify" href="https://www.sportify.com">Sportify</a>
       </li>
       <li>
-        <a>Disney Plus</a>
+        <a title="">Disney Plus</a>
       </li>
     </ul>
   </div>
