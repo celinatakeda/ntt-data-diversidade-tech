@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trilha de CSS</title>
+  <style>
+    div {
+      width: 200px;
+      height: 300px;
+      border: 5px solid blue;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* manter a imagem na proporção do quadro*/
+    #contain {
+      object-fit: contain;
+    }
+
+    /* Cobrir*/
+    #cover {
+      object-fit: cover;
+    }
+
+    /* Ignora totalmente a altura do elemento pai, mantendo o seu tamanho original */
+    #none {
+      object-fit: none;
+    }
+     
+     #scale-down{
+      object-fit: scale-down;
+    }
+  </style>
+</head>
+<body>
+  <h1>Propriedade <code>object-fit</code></h1>
+
+  <code>object-fit: fill;</code> (padrão)
+  <div>
+    <img src="./fishspace" alt="" id="fill">
+  </div>
+
+  <br>
+  <code>object-fit: contain;</code>
+  <div>
+    <img src="./fishspace" alt="" id="contain">
+  </div>
+  
+  <br>
+  <code>object-fit: cover;</code>
+  <div>
+    <img src="./fishspace" alt="" id="cover">
+  </div>
+
+  <br>
+  <code>object-fit: none;</code>
+  <div>
+    <img src="./fishspace" alt="" id="none">
+  </div>
+
+  <br>
+  <code>object-fit: scale-down;</code>
+  <div>
+    <img src="./fishspace" alt="" id="scale-down">
+  </div>
+</body>
+</html>
