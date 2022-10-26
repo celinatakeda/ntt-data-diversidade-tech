@@ -1,3 +1,7 @@
+body {
+  height: 200vh;
+}
+
 div {
   margin-bottom: 30px;
 }
@@ -79,4 +83,33 @@ div {
 
 #combinado {
   background-repeat: round space;
+}
+
+#position {
+  background-repeat: no-repeat;
+  background-position: bottom 10px right 20px; /* top, bottom, left, right, 30px, 10%, bottom right, bottom 10px right 20px*/
+  border: 1px solid red;
+}
+
+/* imagem fica fixa mesmo rolando o texto*/
+#fixed {
+  background-size: cover;
+  border: 1px solid red;
+  overflow: auto;
+  background-attachment: fixed;
+}
+
+#scroll {
+  background-size: cover;
+  border: 1px solid red;
+  overflow: auto; 
+  background-attachment: scroll;
+}
+
+/*imagem rola junto com o elemento scroll, mas imagem fica fixa*/
+#local {
+  background-size: cover;
+  border: 1px solid red;
+  overflow: auto;
+  background-attachment: local;
 }
