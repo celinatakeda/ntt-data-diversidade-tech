@@ -25,8 +25,30 @@ div {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 60px;
   font-weight: 900;
-  background-color: palevioletred;
-  background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p2/102800-fundo-de-explosao-colorido-com-estrelas-vetor.jpg')  
+  background-color: purple;
+  background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p2/102800-fundo-de-explosao-colorido-com-estrelas-vetor.jpg'); 
+  background-blend-mode: lighten; /*mesclagem de cores:  multiply, screen, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, luminosity */  
+}
+
+.exemplo3 {  
+  width: 300px;
+  height: 300px;  
+  border: 15px dashed palegreen;
+  color: white;
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+
+  background: 
+  url('../../imagens/geometria.jpg') /* image */ 
+  top center / 200px 200px  /* position / size */
+  no-repeat /* repeat */
+  fixed /*attachment*/
+  padding-box /*origin*/
+  content-box /*clip*/
+  red /* color */
+  ;
 }
 
 /* valor padrão*/
