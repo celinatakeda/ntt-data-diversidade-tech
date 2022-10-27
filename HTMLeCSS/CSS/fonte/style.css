@@ -1,3 +1,6 @@
+/* Pode importar o arquivo css se tiver*/
+@import url('./reset.css');
+
 /* Aplicando configurações para fonte*/
 @font-face {
   font-family: Roboto;
