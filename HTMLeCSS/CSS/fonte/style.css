@@ -2,6 +2,7 @@
 @font-face {
   font-family: Roboto;
   src: url("./fonts/Roboto-Regular.ttf"); /* local() - procura primeiro se a fonte está instalda, caso contrária pega o segundo parâmetro*/
+  font-weight: normal;
 }
 
 @font-face {
@@ -9,10 +10,35 @@
   src: url("./fonts/Roboto-Italic.ttf"); 
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/Roboto-Black.ttf");
+  font-weight: bold; 
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/Roboto-Thin.ttf");
+  font-weight: lighter; 
+}
+
+
 * {
   font-family: Roboto;
 }
 
 h1 {
   font-family: Batata;
+}
+
+p {
+  font-family: Roboto;
+  font-weight: bold;
+
+  line-height: 2; /* padrão: 1.2, 100%*/
+}
+
+#exemplo {
+  /*font: 20px, Arial, sans-serif; */
+  font: italic small-caps bold 24px/2 Georgia, serif;
 }

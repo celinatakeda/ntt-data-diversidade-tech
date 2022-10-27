@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trilha de CSS</title>
+  <style>
+    h1 + p {
+      color: red;
+      text-decoration: overline; /* underlin, line-through, overline, */
+      text-decoration-line: underline;
+      text-decoration-style: wavy;
+      text-decoration-color: blue;
+      text-decoration-thickness: 5px; /*espessura*/
+      text-decoration: underline wavy blue 1px;
+    }
+
+    p {
+      text-indent: 10px; /* recuo*/
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    #exemplo-letter-spacing {
+      letter-spacing: 2px;
+    }
+
+    #exemplo-word-spacing {
+      word-spacing: 12px; /* aceita valores negativos*/
+    }
+
+    .exemplo {
+      width: 120px;
+      height: 120px;
+      color: black;
+      background-color: chartreuse;
+    }
+
+    span {
+      background-color: seagreen;
+      color: white;
+    }
+
+    #nowrap {
+      white-space: nowrap;
+    }
+
+    #pre {
+      white-space: pre;
+    }
+
+    #pre-line {
+      white-space: pre-line;
+    }
+
+    #pre-wrap {
+      white-space: pre-wrap;
+    }
+
+    #break-spaces {
+      white-space: break-spaces;
+    }
+
+    .exemplo1, .exemplo2 {
+      width: 120px;
+      color: black;
+      background-color: blueviolet;
+    }
+
+    /* Exemplos word-wrap*/
+    #normal {
+      word-wrap: normal;
+    }
+
+    #break-word {
+      word-wrap: break-word;
+    }
+
+    .exemplo2 {
+      background-color: aquamarine;
+    }
+
+    #break-all {
+      word-break: break-all;
+    }
+
+    #keep-all {
+      word-break: keep-all;
+    }
+
+    #exemplo-01 {
+      writing-mode: horizontal-tb;
+    }
+
+    #exemplo-02 {
+      writing-mode: vertical-rl;
+    }
+
+    #exemplo-03 {
+      writing-mode: vertical-lr;
+    }
+
+    .bem-vindo {
+      color: deeppink;
+      font-size: 40px;
+      text-align: center;
+      /*text-shadow: -10px 10px 5px purple;  aceita valore negativos*/
+      /*box-shadow: -10px 10px 5px purple; */
+      filter: drop-shadow(-10px 10px 4px red);
+    }
+
+    .exemplo3 {
+      width: 200px;
+      color: black;
+      background-color: chartreuse;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    #clip {
+      text-overflow: clip; /* valor padrão*/
+    }
+
+    #ellipsis {
+      text-overflow: ellipsis;
+    }
+
+    #string {
+      text-overflow: 'Ver mais >'; /* colocar um texto personalisado, só funciona no firefox*/
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Propriedade text-decoration</h1>
+  <p>
+    Adiciona ou remove linhas no nosso texto: sejam linhas em cima, no meio, ou embaixo. 
+  </p>
+  <p>
+    É uma propriedade abreviada de:
+    <ul>
+      <li>text-decoration-line</li>
+      <li>text-decoration-style</li>
+      <li>text-decoration-color</li>
+      <li>text-decoration-thickness</li>
+    </ul>
+  </p>
+  <a href="#">Link Exemplo</a>
+  <s>Texto de exemplo</s>
+
+  <h2>Propriedade letter-spacing</h2>
+  <p id="exemplo-letter-spacing">
+    Adicionar um espaçamento entre cada CARACTERE do seu texto. Como o nome já diz, espaçamento entre as letras.
+  </p>
+
+  <h2>Propriedade word-spacing</h2>
+  <p id="exemplo-word-spacing">
+    Adicionar um espaçamento entre cada PALAVRA do seu texto. Como o nome já diz, espaçamento entre as palavras.
+  </p>
+
+  <h2>Propriedade white-space</h2>
+  <p>
+    Define como os espaços em branco do texto de um determinado elemento é tratado
+  </p>
+  <i>Exemplos:</i> <br><br>
+
+  <code>white-space: normal</code>
+  <p class="exemplo">
+    <span>
+      But     ere she form the church-door stepped 
+      She smiled and told us why: 
+    'It was a wicked woman's curse, '
+      Quooth she, 'and what care I?'
+
+    She smiled, and smiled, and passed it off
+      Ere form the door she stept-----------------------------------
+    </span>
+  </p>
+  
+  <code>white-space: nowrap</code>
+  <p id="nowrap" class="exemplo">
+    <span>
+      But     ere she form the church-door stepped 
+      She smiled and told us why: 
+    'It was a wicked woman's curse, '
+      Quooth she, 'and what care I?'
+
+    She smiled, and smiled, and passed it off
+      Ere form the door she stept--
+    </span>
+  </p>
+
+  <code>white-space: pre</code>
+  <p id="pre" class="exemplo">
+    <span>
+      But     ere she form the church-door stepped 
+      She smiled and told us why: 
+    'It was a wicked woman's curse, '
+      Quooth she, 'and what care I?'
+
+    She smiled, and smiled, and passed it off
+      Ere form the door she stept--     
+    </span>
+  </p>
+
+  <code>white-space: pre-line</code>
+  <p id="pre-line" class="exemplo">
+    <span>
+      But     ere she form the church-door stepped 
+      She smiled and told us why: 
+    'It was a wicked woman's curse, '
+      Quooth she, 'and what care I?'
+
+    She smiled, and smiled, and passed it off
+      Ere form the door she stept-----------------------------------
+    </span>
+  </p>
+
+  <code>white-space: pre-wrap</code>
+  <p id="pre-wrap" class="exemplo">
+    <span>
+      But     ere she form the church-door stepped 
+      She smiled and told us why: 
+    'It was a wicked woman's curse, '
+      Quooth she, 'and what care I?'
+
+    She smiled, and smiled, and passed it off
+      Ere form the door she stept-----------------------------------
+    </span>
+  </p>
+
+  <code>white-space: break-spaces</code>
+  <p id="break-spaces" class="exemplo">
+    <span>
+      But     ere she form the church-door stepped 
+      She smiled and told us why: 
+    'It was a wicked woman's curse, '
+      Quooth she, 'and what care I?'
+
+    She smiled, and smiled, and passed it off
+      Ere form the door she stept-----------------------------------
+    </span>
+  </p>
+
+  <h2>Propriedade <code>word-wrap</code></h2>
+  <p>Define, caso uma palavra seja muito grande para caber em uma linha, se ela será quebrada em qualquer caractere para que uma parte dela fique na linha e o restante na próxima, ou se não, toda palavra deve ficar na mesma linha e ultrapassar os limites que definimos para o elemento.</p>
+
+  <code>word-wrap: normal;</code>
+  <p id="normal" class="exemplo1">
+    Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS
+  </p>
+
+  <code>word-wrap: break-word;</code>
+  <p id="break-word" class="exemplo1">
+    Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS
+  </p>
+
+  <h2>Propriedade <code>word-break</code></h2>
+  <p>Define quando o nosso texto deve ter uma quebra de linha.</p>
+
+  <code>word-break: normal;</code>
+  <p class="exemplo2">
+    Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS
+  </p>
+
+  <code>word-break: break-all;</code>
+  <p id="break-all" class="exemplo2">
+    Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS
+  </p>
+
+  <code>word-break: keep-all;</code>
+  <p id="keep-all" class="exemplo2">
+    Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS
+  </p>
+
+  <h2>Propriedade <code>writing-mode</code></h2>
+  <p>Define a orientação do texto (vertical ou horizontal).</p>
+
+  <i>Exemplo:</i> <br><br>
+
+  <code> write-mode; horizontal-tb;</code>
+  <p id="exemplo-01" class="exemplo">
+    Chega de saudade
+    A realidade é que sem ela não há paz
+  </p>
+
+  <code>writing-mode; vertical-rl</code>
+  <p id="exemplo-02" class="exemplo">
+    Chega de saudade
+    A realidade é que sem ela não há paz
+  </p>
+  <br><br>
+
+  <code>writing-mode; vertical-lr</code>
+  <p id="exemplo-03" class="exemplo">
+    Chega de saudade
+    A realidade é que sem ela não há paz
+  </p>
+
+  <h2>Propriedade <code>text-overflow</code></h2>
+  <p>Define a orientação do texto (vertical ou horizontal).</p>
+
+  <i>Exemplo:</i> <br><br>
+
+  <code>text-overflow: clip;</code>
+  <p id="clip" class="exemplo3">
+    Chega de saudade
+    A realidade é que sem ela não há paz
+  </p>
+
+  <code>text-overflow: ellipsis;</code>
+  <p id="ellipsis" class="exemplo3">
+    Chega de saudade
+    A realidade é que sem ela não há paz
+  </p>
+
+  <code>text-overflow: string;</code>
+  <p id="string" class="exemplo3">
+    Chega de saudade
+    A realidade é que sem ela não há paz
+  </p>
+
+  <hr />
+  <h2>Propriedade <code>text-shadow</code></h2>
+  <h3 class="bem-vindo">
+    Bem-vindo(a) à Trilha de CSS na DIO!
+  </h3>
+</body>
+</html>
