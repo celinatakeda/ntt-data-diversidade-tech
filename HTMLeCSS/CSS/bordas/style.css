@@ -1,0 +1,26 @@
+/*Slice - fatiar*/
+.exemplo {
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  border: 30px solid;
+  margin: 50px auto;
+}
+
+#exemplo-resumido {
+  border-image: url('./assets/border.png') 169 / 10px / 1 round; /* slice/tamanho/ outset*/
+  
+}
+
+#exemplo-1 {
+  border-image-source: url('./assets/border.png');
+  border-image-repeat: round; /*repeat, */
+  border-image-slice: 169; /*fill*/
+  border-image-outset: 20px 10px 60px 100px; /*1.5*/
+}
+
+#exemplo-2 {
+  border-image-source: linear-gradient(rgb(0,145,255), red);
+  border-image-slice: 10;
+  border-image-outset: 2;
+}
