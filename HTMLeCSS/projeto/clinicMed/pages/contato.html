@@ -42,21 +42,25 @@
             <div class="content">
                 <h1>Contato</h1>
                 <p>ClinicMed <br>
-                   Rua dos médicos, 00 - São Paulo <br>                    
+                   Rua dos médicos, 00 - São Paulo <br>
+                   <img src="../assets/fone.png" width="12px"/>                    
+                    (11) 9999 9999
+                   <img src="../assets/whatsap.png" alt="" width="12px">
+                   (11) 9999 9999                     
                 </p>
-                <form >
+                <form name="signup" onSubmit="alert('Formulário enviado')"; method="post" action>
                     <p>Fale conosco</p>
-                    <label for="">Nome</label>
-                    <input type="text">
+                    <label >Nome:</label>
+                    <input type="text" name="name">
                     <br><br>
-                    <label for="">E-mail</label>
-                    <input type="email">
+                    <label>E-mail:</label>
+                    <input type="email" name="email">
                     <br><br>
-                    <label for="">Assunto</label>
-                    <input type="text">
+                    <label>Assunto:</label>
+                    <input type="text" name="subject">
                     <br><br>
-                    <label for="">Mensagem</label>
-                    <input type="textarea">
+                   
+                    <textarea name="message" cols="35" rows="8" placeholder="Mensagem"></textarea>
                     <br><br>
 
                     <button type="submit">Enviar</button>
