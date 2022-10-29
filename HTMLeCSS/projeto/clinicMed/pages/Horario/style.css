@@ -1,0 +1,15 @@
+table {
+  -webkit-box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+  box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+  border: solid 1px gray;
+}
+
+table thead th {
+  background-color: gray;
+  color: white;
+}
+
+table tbody tr:hover td {
+  background-color: #E9E9E9;
+  cursor: pointer;
+}
