@@ -12,3 +12,10 @@ npx tsc src/index.ts
 
 ## Criando o arquivo tsconfig.json
 npx tsc --init
+
+## Configurando o arquivo tsconfig.json
+"rootDir": "./src",  
+"outDir": "./build", 
+
+## Compilando
+npx tsc
