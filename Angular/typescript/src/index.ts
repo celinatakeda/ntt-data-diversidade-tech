@@ -128,3 +128,28 @@ const stgArray = concatArray<string[]>(["felipe", "goku"], ["vegeta"]);
 
 console.log(numArray);
 console.log(stgArray);
+
+// decorators
+function ExibirNome(target: any) {
+  console.log(target);
+}
+
+@ExibirNome
+class Funcionario {}
+
+@ExibirNome
+class Quincas {}
+
+
+function apiVersion(version: string) {
+  return (target: any) => {
+    Object.assign(target.prototype, {__version: version, __name: "felipe"});
+  };
+}
+
+@apiVersion("1.10")
+class Api {}
+
+const api = new Api();
+//console.log(api.__version); // Não funciona com npm run dev, roda com   npm run start:dev
+console.log(api)

@@ -114,8 +114,9 @@ let soma: number = addNumber(4, 7);
     "start:dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     }
 
-    Rodar
+    Rodar num servidor local em typescript
       npm run start:dev
   ```
 
+  
   
