@@ -1,5 +1,5 @@
 # Construindo uma Pokédex com JavaScript
-Para consumir os dados usamos o aplicativo da PokeApi.
+Neste projeto, mostra uma lista de pokémons onde os dados são consumidos pelo aplicativo PokeApi.
 
 ## Links Úteis
 https://necolas.github.io/normalize.css/
