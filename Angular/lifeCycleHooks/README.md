@@ -11,4 +11,22 @@
   - editorConfig, Prettier, eslint
 
 - Angular 
-   npm install -g @angular/cli@14.1
+  npm install -g @angular/cli@14.1.2
+
+## Em casso de erro
+  1. Desinstalar a ferramenta 
+    npm uninstall -g @angular/cli
+
+  2. Limpar o cache
+    npm cache clear --force
+    npm cache verify
+
+  3. Habilitar permissão para o ng execute os scripts
+    c:\Windows\system32> 
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+## Criando um projeto Angular
+  ng new life-cycle
+   
+## Links
+   https://angular.io/
