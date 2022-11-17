@@ -26,7 +26,17 @@
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 ## Criando um projeto Angular
-  ng new life-cycle
+  ng new "nome do projeto"
+
+## Criar estrutura de código
+  ng generate --help
+
+## Criando um componente
+```
+  ng generate component title(nome do componente) 
+  ou usando aliase
+  ng g c title
+```
    
 ## Links
    https://angular.io/
