@@ -6,9 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./comp-atributos.component.css']
 })
 export class CompAtributosComponent implements OnInit {
-  estilo: string = "";
+  estilo:string = "";
+  corFundo:string = "blue";
+  corDaFonte:string = "yellow";
+  item: string = ""
+  lista:string[] = [];
+  isEnableBlock:boolean = false;
 
   constructor() { }
+
+  adicionarLista() {
+    this.lista.push(this.item);
+  }
 
   ngOnInit(): void {
   }
