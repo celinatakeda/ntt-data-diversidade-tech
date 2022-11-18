@@ -15,6 +15,14 @@ A blog project created with Angular based on dribbble layout
 
 ```
 
+## Criando componentes
+```
+  ng g c components/menu-bar
+  ng g c components/menu-title
+  ng g c components/big-card
+  ng g c components/small-card
+```
+
 ## Links
 https://dribbble.com/
 
