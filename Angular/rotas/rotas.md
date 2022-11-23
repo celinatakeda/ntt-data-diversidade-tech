@@ -1,4 +1,4 @@
-# Criando projeto 
+## Criando projeto 
   ng new rotas
 
 ## Criando módulos
@@ -11,4 +11,5 @@
 ```
   ng g c pages/index/title
   ng g c pages/portifolio/card
+  ng g c shared/menu
 ```
