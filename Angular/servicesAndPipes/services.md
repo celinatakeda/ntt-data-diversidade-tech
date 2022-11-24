@@ -4,6 +4,14 @@
 ## Criando componentes
 ```
   ng g c components/card
-  ng g c pages/portifolio/card
-  ng g c shared/menu
+  
 ```
+
+## Criando service
+```
+  ng g s services/pokemon
+  
+```
+
+## Links
+https://pokeapi.co
