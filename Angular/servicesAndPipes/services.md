@@ -1,5 +1,7 @@
 ## Criando projeto 
+```
   ng new servicesAndPipes
+```
 
 ## Criando componentes
 ```
