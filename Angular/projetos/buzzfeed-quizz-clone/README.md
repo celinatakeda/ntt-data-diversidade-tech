@@ -6,3 +6,7 @@
 ```
 
 ## Criando componentes
+```
+  ng g c components/quizz
+  ng g c pages/home
+```
