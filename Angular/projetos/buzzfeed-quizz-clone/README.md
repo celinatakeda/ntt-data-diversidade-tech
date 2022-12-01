@@ -1,4 +1,5 @@
 # Buzzfeed Quizz Clone
+Projeto baseado na plataforma de blogs do Buzzfeed.
 
 ## Criando projeto
 ```
