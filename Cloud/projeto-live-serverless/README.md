@@ -97,7 +97,8 @@ resources:
 
 ## Instalar dependências
 ```
-npm init ``` ```npm i uuid aws-sdk```
+npm init ``` ```npm i uuid aws-sdk
+```
 
 Atualizar lista de funções no arquivo serverless.yml
 ```
