@@ -135,3 +135,8 @@ updateItem:
         path: /items/{id}
         method: put
 ```
+
+## Deploy 
+```
+$ serverless deploy
+```
