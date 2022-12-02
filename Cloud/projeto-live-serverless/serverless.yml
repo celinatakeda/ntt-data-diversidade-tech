@@ -6,7 +6,18 @@ provider:
   name: aws
   runtime: nodejs14.x
   region: us-east-1
+  iam:
+      role:
+          statements:
+            - Effect: Allow
+              Action:
+                - dynamodb:PutItem
+                - dynamodb:UpdateItem
+                - dynamodb:GetItem
+                - dynamodb:Scan
+              Resource:
+                - arn:aws:dynamodb:us-east-1:167880115321:table/ItemTable
 
 functions:
   hello:
-    handler: handler.hello
+    handler: src/hello.handler
