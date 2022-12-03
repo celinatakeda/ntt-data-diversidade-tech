@@ -44,19 +44,19 @@ Renomear o arquivo "handler.js" para "hello.js"
 
 Atualizar o código
 ```
-const hello = async (event) => {
-/////
-module.exports = {
-    handler:hello
-}
+  const hello = async (event) => {
+  /////
+  module.exports = {
+      handler:hello
+  }
 ```
 
 ## Atualizar o arquivo "serverless.yml "
 ```
-handler: src/hello.handler
+  handler: src/hello.handler
 ```
 ```
-$ serverless deploy -v
+  $ serverless deploy -v
 ```
 
 ## DynamoDB
@@ -78,11 +78,13 @@ resources:
 ```
 
 ## Desenvolver funções lambda
-```
-- Pasta /src do repositório
-- Obter arn da tabela no DynamoDB AWS Console -> DynamoDB -> Overview -> Amazon Resource Name (ARN)
-- Atualizar arquivo serverless.yml com o código a seguir, abaixo do ```region:
-```
+
+Pasta /src do repositório
+
+Obter arn da tabela no DynamoDB AWS Console -> DynamoDB -> Overview -> Amazon Resource Name (ARN)
+
+Atualizar arquivo serverless.yml com o código a seguir, abaixo do ```region:
+
 ```
   iam:
     role:
