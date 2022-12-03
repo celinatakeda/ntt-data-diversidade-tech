@@ -5,7 +5,7 @@ Este repositório contém o código fonte da Live Coding da DIO. Neste projeto v
 Pré requisitos:
 ```
   Possuir uma conta na AWS e instalar Node.js na máquina.
-  
+
   Instalar o AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html
 ```
 
@@ -14,7 +14,7 @@ Credenciais AWS
 ```
   Criar usuário: AWS Management Console -> IAM Dashboard -> Create New User -> <nome do usuário> -> Permissions "Administrator Access" -> Programmatic Access -> Dowload Keys
 
-No terminal: $ aws configure -> colar as credenciais geradas anteriormente
+  No terminal: $ aws configure -> colar as credenciais geradas anteriormente
 ```
 
 ## Configurar o framework Serverless
@@ -23,15 +23,15 @@ No terminal: $ aws configure -> colar as credenciais geradas anteriormente
 ```
 ## Desenvolvimento do projeto
 ```
-$ serverless
-Login/Register: No
-Update: No
-Type: Node.js REST API
-Name: dio-live
+  $ serverless
+  Login/Register: No
+  Update: No
+  Type: Node.js REST API
+  Name: dio-live
 ```
 ```
-$ cd dio-live
-$ code .
+  $ cd dio-live
+  $ code .
 ```
 No arquivo serverless.yml adicionar a região region: us-east-1 dentro do escopo de provider:
 
