@@ -1,19 +1,21 @@
 # API Node.js com Serverless Framework em ambiente AWS
-Este repositório contém o código fonte da Live Coding da DIO no dia 29/07/2021. Neste projeto vamos criar uma infraestrutra em nuvem AWS com API Gateway, DynamoDB, AWS Lambda e AWS CloudFormation utilizando o framework Serverless para o desenvolvimento baseada em Infraestrutura as a Code.
+Este repositório contém o código fonte da Live Coding da DIO. Neste projeto vamos criar uma infraestrutra em nuvem AWS com API Gateway, DynamoDB, AWS Lambda e AWS CloudFormation utilizando o framework Serverless para o desenvolvimento baseada em Infraestrutura as a Code.
 
 ## Etapas
 Pré requisitos:
-
-Possuir uma conta na AWS e instalar Node.js na máquina.
-
-Instalar o AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html
+```
+  Possuir uma conta na AWS e instalar Node.js na máquina.
+  
+  Instalar o AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html
+```
 
 ## Setup Inicial
 Credenciais AWS
-
-Criar usuário: AWS Management Console -> IAM Dashboard -> Create New User -> <nome do usuário> -> Permissions "Administrator Access" -> Programmatic Access -> Dowload Keys
+```
+  Criar usuário: AWS Management Console -> IAM Dashboard -> Create New User -> <nome do usuário> -> Permissions "Administrator Access" -> Programmatic Access -> Dowload Keys
 
 No terminal: $ aws configure -> colar as credenciais geradas anteriormente
+```
 
 ## Configurar o framework Serverless
 ```
