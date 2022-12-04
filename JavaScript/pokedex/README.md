@@ -9,7 +9,9 @@ Ao clicarmos no botão Load More é mostrado um limite de 10 cards de pokemons a
 </p>
 
 ## Links Úteis
-https://necolas.github.io/normalize.css/
+https://pokeapi.co
+
+https://necolas.github.io/normalize.css
 
 ### cdn do normalize
 https://cdnjs.com/libraries/normalize
