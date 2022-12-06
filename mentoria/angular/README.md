@@ -2,7 +2,7 @@
 Criando card do pokémon.
 
 <p align="center">
-  <img src=".github/pokeCard.png" width="500">
+  <img src=".github/pokeCard.png" width="300">
 </p>
 
 ## Links Úteis
