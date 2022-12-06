@@ -1,5 +1,5 @@
 # Componentizando uma Aplicação com Angular
-Criando card do pokémon.
+Criando componente card do pokémon.
 
 <p align="center">
   <img src=".github/pokeCard.png" width="300">
