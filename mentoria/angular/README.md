@@ -1,6 +1,8 @@
 # Componentizando uma Aplicação com Angular
 Criando componente card do pokémon.
 
+Para codar o código foi usada o editor stackblitz.
+
 ## Visual do card
 
 <p align="center">
