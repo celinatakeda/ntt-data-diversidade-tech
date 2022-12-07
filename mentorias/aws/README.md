@@ -6,7 +6,7 @@ Criando um projeto em angular e fazendo deploy no AWS utilizando o serviço S3.
 ```
   npm install -g @angular/cli
   ng new dio-ntt-diverse-tech-web
-  ng build
+  ng build - gerar arquivos para distribuir para produção para poder acessar a minha página
 ```
 
 2. Realizar upload dos arquivos gerados no S3
