@@ -27,7 +27,7 @@ Criando um projeto em angular e fazendo deploy no AWS utilizando o serviço S3.
 ```
 
 3. Adicionar nova rota no projeto web
-
+```
   Criar componentes home e contatos:
   ```
     ng generate component home
@@ -40,7 +40,7 @@ Criando um projeto em angular e fazendo deploy no AWS utilizando o serviço S3.
   Adicionar as rotas default e contatos no app.routing.module.ts
 
   Adicionar o botão que redireciona para a rota de contatos, dentro do HTML do home.component.html
-
+```
 
 ## Rodar a aplicação
 ```
@@ -71,6 +71,7 @@ Criando um projeto em angular e fazendo deploy no AWS utilizando o serviço S3.
 3. Selecionar o source provider para CodeCommit
 ```
   Selecionar o projeto web
+  
   Selecionar a branch que será usada para na pipeline
 ```
 
