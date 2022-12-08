@@ -1,37 +1,27 @@
-# Deploy de Aplicação Angular na AWS
-Criando um projeto em angular e fazendo deploy no AWS utilizando o serviço S3.
+# DioNttDiverseTechWeb
 
-## Steps
-1. Criar o projeto Angular
-```
-  npm install -g @angular/cli
-  ng new dio-ntt-diverse-tech-web
-  ng build - gerar arquivos para distribuir para produção para poder acessar a minha página
-```
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 
-2. Realizar upload dos arquivos gerados no S3
-```
-  Criar um bucket do nome dio-ntt-diverse-tech
-  Adicionar os arquivos gerados no bucket
-  Permitir acesso público aos objetos do bucket
-  Habilitar static website hosting
-```
+## Development server
 
-3. Adicionar nova rota no projeto web
-```
-  Criar componentes home e contatos
-    ng generate component home
-    ng g c contatos
-  Recortar HTML do app.component.html e adicionar no home.component.html
-  Copiar e colar o conteúdo do export class do app.component.ts no home.component.ts
-  Adicionar as rotas default e contatos no app.routing.module.ts
-  Adicionar o botão que redireciona para a rota de contatos, dentro do HTML do home.component.html
-```
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Rodar a aplicação
-```
-  ng serve --open
-```
+## Code scaffolding
 
-## Links usados
-  https://angular.io/guide/setup-local
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
