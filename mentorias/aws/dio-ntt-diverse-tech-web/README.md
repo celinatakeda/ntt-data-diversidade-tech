@@ -16,7 +16,7 @@ Criando um projeto em angular e fazendo deploy no AWS utilizando o serviço S3.
 ```
 
 2. Realizar upload dos arquivos gerados no S3
-
+```
   Criar um bucket do nome dio-ntt-diverse-tech
 
   Adicionar os arquivos gerados no bucket
@@ -24,7 +24,7 @@ Criando um projeto em angular e fazendo deploy no AWS utilizando o serviço S3.
   Permitir acesso público aos objetos do bucket
 
   Habilitar static website hosting
-
+```
 
 3. Adicionar nova rota no projeto web
 
