@@ -1,6 +1,10 @@
 # Deploy de Aplicação Angular na AWS
 Criando um projeto em angular e fazendo deploy no AWS utilizando o serviço S3.
 
+<p>
+  <img src=".github/diverseTech.png">
+</p>
+
 ## Steps
 1. Criar o projeto Angular
 ```
