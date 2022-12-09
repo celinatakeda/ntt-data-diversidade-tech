@@ -50,13 +50,13 @@ Criando um projeto em angular e fazendo deploy no AWS utilizando o serviço S3.
 
 # Steps
 1. Criar um repositório para o projeto no CodeCommit
-
-  Após criar o projeto, deve-se realizar o commit inicial: 
 ```
+  Após criar o projeto, deve-se realizar o commit inicial: 
     git add .  
+
     git commit -m "initial commit"
 
-  git remote add origin URL_DISPONIVEL_CODE_COMMIT
+    git remote add origin URL_DISPONIVEL_CODE_COMMIT
 
   git push -u origin master
 ```
@@ -64,6 +64,7 @@ Criando um projeto em angular e fazendo deploy no AWS utilizando o serviço S3.
 2. Criar um projeto no CodePipeline
 ```
   Definir o nome do projeto
+  
   Criar um service role default
 ```
 
