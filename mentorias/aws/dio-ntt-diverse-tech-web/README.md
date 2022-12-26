@@ -46,9 +46,9 @@ Criando um projeto em angular e fazendo deploy no AWS utilizando o serviço S3.
   ng serve --open
 ```
 
-# CodePipeline
+## CodePipeline
 
-## Steps
+### Steps
 1. Criar um repositório para o projeto no CodeCommit
 ```
   Após criar o projeto, deve-se realizar o commit inicial: 
@@ -76,7 +76,7 @@ Criando um projeto em angular e fazendo deploy no AWS utilizando o serviço S3.
 ```
 
 ## CodeBuild
-Steps
+### Steps
 1. Criar projeto CodeBuild e configurar o processo de build da aplicação, com o buildspec.yml abaixo:
 
 ```
