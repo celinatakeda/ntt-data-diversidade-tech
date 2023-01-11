@@ -16,11 +16,14 @@
 ```
 
 ## Em casso de erro
-  1. Desinstalar a ferramenta 
+  1. Desinstalar a ferramenta
+
     npm uninstall -g @angular/cli
 
   2. Limpar o cache
+
     npm cache clear --force
+    
     npm cache verify
 
   3. Habilitar permissão para o ng execute os scripts
