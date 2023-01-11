@@ -1,4 +1,4 @@
-# Requesitos
+# Requisitos
 
 - Node & NPM (nodejs.org)
 
