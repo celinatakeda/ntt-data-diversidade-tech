@@ -23,11 +23,13 @@
   2. Limpar o cache
 
     npm cache clear --force
-    
+
     npm cache verify
 
   3. Habilitar permissão para o ng execute os scripts
+
     c:\Windows\system32> 
+    
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 ## Criando um projeto Angular
