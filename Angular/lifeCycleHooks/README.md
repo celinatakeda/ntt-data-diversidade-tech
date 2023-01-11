@@ -10,8 +10,10 @@
   - Icones: Material Icon Theme (*opcional)
   - editorConfig, Prettier, eslint
 
-- Angular 
+- Angular
+``` 
   npm install -g @angular/cli@14.1.2
+```
 
 ## Em casso de erro
   1. Desinstalar a ferramenta 
@@ -26,10 +28,14 @@
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 ## Criando um projeto Angular
+```
   ng new "nome do projeto"
+```
 
 ## Criar estrutura de código
+```
   ng generate --help
+```
 
 ## Criando um componente
 ```
