@@ -1,25 +1,38 @@
-# Instalando Typescript
+# Typescript
 ## Criar projeto node 
-npm init -y
-
+```
+  npm init -y
+```
 ## Intalar o typescript
-npm install typescript -D
+```
+  npm install typescript -D
+```
 
 ## Rodar códgio typescript
-node src/index.ts
+```
+  node src/index.ts
+```
 
 ## Trancrever para o javascript
-npx tsc src/index.ts
+```
+  npx tsc src/index.ts
+```
 
 ## Criando o arquivo tsconfig.json
-npx tsc --init
+```
+  npx tsc --init
+```
 
 ## Configurando o arquivo tsconfig.json
-"rootDir": "./src",  
-"outDir": "./build", 
+```
+  "rootDir": "./src",  
+  "outDir": "./build", 
+```
 
 ## Compilando
-npx tsc
+```
+  npx tsc
+```
 
 ## Criando um script de execução no arquivo package.json
 ```
@@ -28,7 +41,9 @@ npx tsc
 ```
 
 ## Rodar o script
-npm run start
+```
+  npm run start
+```
 
 ## Tipos no Typescript
 ### Trabalhando com tipos de Variáveis
