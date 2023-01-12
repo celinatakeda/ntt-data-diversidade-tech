@@ -2,7 +2,9 @@
 A blog project created with Angular based on dribbble layout
 
 ## Criando projeto
+```
   ng new angular-blog
+```
 
 ## Passos para enviar o projeto para o repositório
 ```
