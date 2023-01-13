@@ -55,6 +55,7 @@ Atualizar o código
 ```
   handler: src/hello.handler
 ```
+
 ```
   $ serverless deploy -v
 ```
@@ -101,10 +102,11 @@ Atualizar arquivo serverless.yml com o código a seguir, abaixo do ```region:
 
 ## Instalar dependências
 ```
-npm init
+  npm init
 ```
+
 ``` 
-npm i uuid aws-sdk
+  npm i uuid aws-sdk
 ```
 
 Atualizar lista de funções no arquivo serverless.yml
@@ -144,5 +146,5 @@ updateItem:
 
 ## Deploy 
 ```
-$ serverless deploy
+  $ serverless deploy
 ```
