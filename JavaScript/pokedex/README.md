@@ -1,7 +1,7 @@
 # Construindo uma Pokédex com JavaScript
 Neste projeto, desenvolvemos uma lista de pokémons onde os dados são consumidos pelo aplicativo PokeApi.
 
-Ao clicarmos no botão Load More é mostrado um limite de 10 cards de pokemons até atingir o máximo de 150 cards.
+Ao clicarmos no botão Load More é mostrado um limite de 10 cards de pokémons até atingir o máximo de 150 cards.
 
 ## Visual do projeto
 <p>
