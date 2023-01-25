@@ -1,5 +1,5 @@
 # Landing Page
 
 <p>
-  <img src=".github/landingPage1.png">
+  <img src=".github/landingPage1.png" width=200>
 </p>
