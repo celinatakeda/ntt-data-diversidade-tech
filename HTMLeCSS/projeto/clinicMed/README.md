@@ -1,4 +1,5 @@
 # Criando um site completo com HTML e CSS
-<p>
+<p align="center">
   <img src=".github/home.png">
+  <img src=".github/sobreNos.png">
 </p>
